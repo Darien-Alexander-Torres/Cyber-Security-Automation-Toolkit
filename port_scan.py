@@ -4,6 +4,7 @@ import re
 import logging
 import os
 
+
 def main():
     logging.basicConfig(
         filename='Information_Ports.log',
@@ -59,5 +60,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
