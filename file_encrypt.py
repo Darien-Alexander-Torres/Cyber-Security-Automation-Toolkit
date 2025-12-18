@@ -2,7 +2,6 @@ from cryptography.fernet import Fernet, InvalidToken
 import os
 import logging
 
-
 def write_to_txt(message):
     with open("file_encrypt_results.txt", "a") as txt_file:
         txt_file.write(message + "\n")
@@ -123,3 +122,4 @@ def main():
             continue
 
 main()
+
