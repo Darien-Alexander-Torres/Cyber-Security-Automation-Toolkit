@@ -3,6 +3,7 @@ import json
 import logging
 import os
 
+
 def main():
     logging.basicConfig(
         filename='internetdb_search_logs.log',
@@ -36,4 +37,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
