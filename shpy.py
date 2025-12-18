@@ -7,7 +7,6 @@ from datetime import datetime
 import time
 
 def menu_bash():
-
     def calculate_hash(file_path):
         """Función para calcular el hash SHA256 de un archivo"""
         sha256_hash = hashlib.sha256()
@@ -60,4 +59,5 @@ def menu_bash():
             print("Opción inválida. Por favor, ingrese 1 o 2.")
 
     print("Script ejecutado correctamente.")
+
 
