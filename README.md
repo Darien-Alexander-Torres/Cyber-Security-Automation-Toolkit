@@ -1,4 +1,6 @@
 # Cyber Security Automation Toolkit 🛡️
+Este módulo utiliza scripts de reconocimiento y defensa activa. Puedes ver el detalle técnico profundo de estas herramientas en mi repositorio especializado: https://github.com/Darien-Alexander-Torres/Cibersecurity_Proyects
+
 
 Este repositorio contiene una suite integral de **14 herramientas** de ciberseguridad desarrolladas en **Python, PowerShell y Bash**. El sistema está diseñado para ser multiplataforma, detectando automáticamente el sistema operativo (Windows, Linux o MacOS) para desplegar los módulos compatibles.
 
