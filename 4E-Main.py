@@ -8,7 +8,6 @@ import pspy  #modulos locales
 import pypy  #
 import shpy  #  
 
-
 parser = argparse.ArgumentParser(prog='Script4E', description='Script principal del último entregable de Programación para Ciberseguridad.') #paso de parámetros con argparse OPCIONALES.
 parser.add_argument("-mod", dest="modulo", type=int, help="Lenguaje de módulos a ejecutar. Puede ser 1 para POWERSHELL, 2 para BASH o 3 para PYTHON.")
 parser.add_argument('-ct', dest="cibertarea",type=int, help="Cibertarea a realizar. Puede ser 1-4 para POWERSHELL, 1-2 para BASH y 1-5 para PYHON." )
@@ -308,3 +307,4 @@ else:
     print ("Su sistema operativo no es conocido.")
     print ("De todas maneras, tendrá acceso a 11/11 módulos.")
     menu_main_linux()
+
