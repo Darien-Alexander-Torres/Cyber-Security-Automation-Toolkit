@@ -1,6 +1,5 @@
 import subprocess
 import os
-
 script_route = os.getcwd()  #Getcurrentworkingdirectory! Para conseguir la ruta de donde estamos ejecutando el script
 
 
@@ -109,4 +108,5 @@ def vthashcheck():
 
     except Exception as e:
         print("Error al ejecutar 'VirusTotalHashCheck':", e)
+
 
