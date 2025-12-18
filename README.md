@@ -23,8 +23,6 @@ El proyecto utiliza un orquestador principal (`4E-Main.py`) que gestiona la ejec
 #🔒 Garantía de Integridad
 Para asegurar la validez de los resultados en un entorno profesional de **CDC**, el sistema genera automáticamente un **hash SHA-512** de cada reporte técnico generado, garantizando que la evidencia no ha sido alterada.
 
-#👥 Créditos
-Proyecto desarrollado como parte de la formación en LSTI (UANL).
-* Darien T.
-* Chris T.
-* Santiago B.
+
+Proyecto colaborativo desarrollado como parte de la formación en LSTI (UANL).
+
