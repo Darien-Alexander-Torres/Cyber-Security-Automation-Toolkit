@@ -1,9 +1,9 @@
 <#
 .SYNOPSIS
-Módulo para revisar archivos y carpetas ocultas en un directorio.
+MÃ³dulo para revisar archivos y carpetas ocultas en un directorio.
 
 .DESCRIPTION
-Este módulo revisa un directorio específico dado por el usuario y ofrece las opciones de revisar tanto archivos y carpetas ocultos como los archivos y carpetas regulares en el directorio elegido. 
+Este mÃ³dulo revisa un directorio especÃ­fico dado por el usuario y ofrece las opciones de revisar tanto archivos y carpetas ocultos como los archivos y carpetas regulares en el directorio elegido. 
 
 .PARAMETER Folder
 Ruta de la carpeta a revisar.
@@ -12,18 +12,18 @@ Ruta de la carpeta a revisar.
 .Get-Hidden -Folder "C:\ruta\a\carpeta"
 
 .NOTES
-Este módulo forma parte de un script más grande, pero se puede seguir utilizando como un módulo independiente. La única función que usa es "Get-Hidden", y se le da el parámetro de -Folder, junto a la ruta que se quiere revisar.
+Este mÃ³dulo forma parte de un script mÃ¡s grande, pero se puede seguir utilizando como un mÃ³dulo independiente. La Ãºnica funciÃ³n que usa es "Get-Hidden", y se le da el parÃ¡metro de -Folder, junto a la ruta que se quiere revisar.
 
 #>
 
 
 Set-StrictMode -Version Latest
 
-#Inicio de función
+#Inicio de funciÃ³n
   
 function Get-Hidden {
 
-#Definición de parametros.
+#DefiniciÃ³n de parametros.
 
     param(
     [Parameter (Mandatory = $True)]
@@ -31,7 +31,7 @@ function Get-Hidden {
 )
 
 
-#Verificación del directorio. 
+#VerificaciÃ³n del directorio. 
     try {
     if (-not (Test-Path $Folder)) {
         Write-Host "El directorio $Folder no existe." -ForegroundColor Yellow
@@ -40,7 +40,7 @@ function Get-Hidden {
         
     }
 } catch {
-    Write-Host "Error con la verificación del directorio: $($_.Exception.Message)"
+    Write-Host "Error con la verificaciÃ³n del directorio: $($_.Exception.Message)"
     return
     
     
@@ -48,11 +48,11 @@ function Get-Hidden {
     
     $salida = $False 
 
-#Inicio de ciclo del menú
+#Inicio de ciclo del menÃº
  
     while ($salida -eq $False) {
 
-        $opcion = Read-Host -Prompt "¿Qué información desea ver?
+        $opcion = Read-Host -Prompt "Â¿QuÃ© informaciÃ³n desea ver?
         [1] Solo archivos ocultos
         [2] Todos los archivos
         [3] Solo carpetas ocultas
@@ -143,11 +143,11 @@ function Get-Hidden {
             }
             7 {
                 $salida = $True
-                Write-Host "Saliendo del módulo..." -ForegroundColor DarkMagenta
+                Write-Host "Saliendo del mÃ³dulo..." -ForegroundColor DarkMagenta
             break
             }
             default {
-                Write-Host "Opción inválida" -ForegroundColor Red
+                Write-Host "OpciÃ³n invÃ¡lida" -ForegroundColor Red
             break
             }
         }   
