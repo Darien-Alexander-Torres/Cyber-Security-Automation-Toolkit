@@ -4,6 +4,7 @@ import logging
 import shodan
 import os
 
+
 def main():
     logging.basicConfig(
         filename='shodan_search_logs.log',
@@ -41,3 +42,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
