@@ -1,6 +1,5 @@
 import os
 import subprocess
-
 def file_encrypt():
     try: 
         subprocess.run(["python", "file_encrypt.py"])
@@ -30,6 +29,7 @@ def internetdb_search():
         subprocess.run(["python", "internetdb_search.py"])
     except Exception as e:
         print(f"Error al ejecutar uno de los scripts: {e}")
+
 
 
 
